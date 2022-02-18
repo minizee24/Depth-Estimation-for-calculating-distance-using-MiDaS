@@ -80,7 +80,7 @@ if len(idxs) > 0:
         cv2.putText(colorDepth, f" Distance = {d} m", (x-40, y ), cv2.FONT_HERSHEY_PLAIN, 1.5, (0, 0, 255), 2)
 
         combinedImg = np.hstack((image, colorDepth))
-        cv2_imshow(combinedImg)
+        cv2.imshow(combinedImg)
         if cv2.waitKey(1) == ord('q'):
             break
 
